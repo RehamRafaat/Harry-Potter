@@ -6,4 +6,55 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-top: -50px;
+    background-attachment: fixed;
+}
+h1,h3{
+    text-align: center;
+    color: #fff;
+}
+h1{
+    font-size: 60px;
+    padding-top: 15%;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+h3{
+    padding-top: 5%;
+    font-size: 30px;
+    -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes example {
+    from{margin-top: -350px;}
+    to{padding-top: 15%;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from{margin-top: -350px;}
+    to{padding-top: 15%;}
+}
+@-webkit-keyframes example2 {
+    from{margin-top: -350px;}
+    to{padding-top: 5%;}
+}
+
+/* Standard syntax */
+@keyframes example2 {
+    from{margin-top: -350px;}
+    to{padding-top: 5%;}
+}
+#slider{
+    width: 100%;
+    height: 655px;
 }
